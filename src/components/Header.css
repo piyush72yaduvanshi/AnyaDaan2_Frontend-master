@@ -1,0 +1,179 @@
+
+.headerBox {
+  height: 60px;
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4vw;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logoDiv {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.logoDiv img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logoDiv a {
+  text-decoration: none;
+  color: #16a34a;
+}
+
+.optionsDiv {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.optionsDiv ul {
+  display: flex;
+  list-style: none;
+  gap: 36px;
+  padding: 0;
+  margin: 0;
+}
+
+.optionsDiv li {
+  position: relative;
+}
+
+.optionsDiv a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #1f2937;
+  transition: color 0.3s ease;
+}
+
+.optionsDiv a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -6px;
+  background-color: #16a34a;
+  transition: width 0.3s ease;
+}
+
+.optionsDiv a:hover {
+  color: #16a34a;
+}
+
+.optionsDiv a:hover::after {
+  width: 100%;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.auth-buttons .btn{
+  margin-top: 0px;
+}
+.Hbtn {
+  height: 42px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-login {
+  padding: 5px 12px;
+  border: 1.5px solid #16a34a;
+  color: #16a34a;
+  background: transparent;
+}
+
+.btn-login:hover {
+  background-color: #dcfce7;
+}
+
+.btn-signup {
+  padding: 5px 12px;
+  background-color: #16a34a;
+  color: #ffffff;
+  border: 1.5px solid #16a34a;
+}
+
+.btn-signup:hover {
+  background-color: #15803d;
+}
+
+.logoutBtn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0 18px;
+  height: 42px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logoutBtn:hover {
+  background-color: #dc2626;
+  transform: scale(1.03);
+}
+
+.logoutBtn:active {
+  transform: scale(0.96);
+}
+@media (max-width: 768px) {
+  .optionsDiv {
+    display: none;
+  }
+
+  .headerBox {
+    padding: 0 5vw;
+    height: 65px;
+  }
+
+  .logoDiv {
+    font-size: 1.5rem;
+  }
+
+  .auth-buttons {
+    gap: 10px;
+  }
+
+  .Hbtn {
+    height: 38px;
+    padding: 0 14px;
+    font-size: 0.85rem;
+  }
+  .btn-login{
+    padding: 7px 12px;
+  }
+  .btn-signup{
+    padding: 7px 12px;
+  }
+}
+

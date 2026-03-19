@@ -1,0 +1,123 @@
+
+.contribute-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0f172a, #020617);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 15px;
+}
+.contribute-card {
+  width: 100%;
+  max-width: 750px;
+  background: linear-gradient(180deg, #111827, #020617);
+  padding: 50px;
+  border-radius: 24px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
+}
+
+.contribute-card h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 35px;
+  color: #ffffff;
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 16px;
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9ca3af;
+}
+.upload-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.upload-box input[type="file"] {
+  display: none;
+}
+
+.upload-btn {
+  padding: 10px 20px;
+  background: #1f2937;
+  border: 1px dashed #4ade80;
+  border-radius: 10px;
+  color: #4ade80;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-btn:hover {
+  background: #022c22;
+}
+
+.file-name {
+  font-size: 0.85rem;
+  color: #a7f3d0;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(99, 102, 241, 0.5);
+}
+
+@media (max-width: 600px) {
+  .contribute-card {
+    padding: 35px 25px;
+  }
+
+  .contribute-card h2 {
+    font-size: 1.9rem;
+  }
+  .contributeForm{
+    width: 350px;
+}
+}
+
+
+.contributeForm{
+    width: 750px;
+}

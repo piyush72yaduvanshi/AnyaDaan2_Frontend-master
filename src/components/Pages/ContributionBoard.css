@@ -1,0 +1,159 @@
+
+.CBpage {
+  min-height: 100vh;
+  background: radial-gradient(
+    circle at top,
+    #0b1224 0%,
+    #050b1a 45%,
+    #020617 100%
+  );
+}
+
+.CBboard-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 90px 24px 120px;
+  color: #e5e7eb;
+}
+.CBboard-page h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  color: #c7d2fe;
+}
+.CBtop3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 70px;
+}
+
+.CBtop-card {
+  background: linear-gradient(
+    135deg,
+    rgba(124, 58, 237, 0.35),
+    rgba(59, 130, 246, 0.25)
+  );
+  border-radius: 24px;
+  padding: 15px 28px;
+  text-align: center;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.CBtop-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 45px 80px rgba(0, 0, 0, 0.85);
+}
+
+.CBavatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin: 0 auto 18px;
+  background: linear-gradient(135deg, #a78bfa, #60a5fa);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.CBtop-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 6px;
+}
+
+.CBdesignation {
+  font-size: 0.95rem;
+  color: #c7d2fe;
+  margin-bottom: 14px;
+}
+.CBamount {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #fde68a;
+}
+
+.CBtable {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.CBrow {
+  display: grid;
+  grid-template-columns: 60px 1.8fr 1.8fr 1fr;
+  align-items: center;
+  padding: 20px 26px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  transition: background 0.35s ease;
+}
+
+.CBrow:last-child {
+  border-bottom: none;
+}
+
+.CBrow:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.CBheader {
+  background: rgba(99, 102, 241, 0.18);
+  font-weight: 700;
+  color: #e0e7ff;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.CBuser {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.CBuser-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f472b6, #818cf8);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+}
+
+.CBmuted {
+  color: #c7d2fe;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .CBtop3 {
+    grid-template-columns: 1fr;
+  }
+
+  /* .CBrow {
+    grid-template-columns: 40px 1fr 1fr;
+  } */
+   .CBrow span{
+    padding-right: 10px;
+   }
+
+  .CBrow span:last-child,
+  .CBheader span:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .CBboard-page h2 {
+    font-size: 2.2rem;
+  }
+
+  .CBboard-page {
+    padding: 70px 16px 100px;
+  }
+}
