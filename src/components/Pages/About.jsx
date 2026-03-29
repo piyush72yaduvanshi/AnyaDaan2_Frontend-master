@@ -132,7 +132,8 @@ const About = () => {
             className="team-image"
           />
           <h3>Saurabh Yadav</h3>
-          <p>Founder & Developer</p>
+          <p>Founder</p>
+          <p>AnyaDaan NGO</p>
         </div>
 
         {/* Member 2 */}
